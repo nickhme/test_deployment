@@ -9,7 +9,7 @@ const App = () => (
     <div>Hello mah</div>
     <Switch>
       <Route exact path="/nick/nack" component={Home}/>
-      <Route exact path="/nick" component={Cheeses}/>
+      <Route exact path="/" component={Cheeses}/>
     </Switch>
   </BrowserRouter>
 )
