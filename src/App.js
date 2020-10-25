@@ -19,7 +19,7 @@ const Home = () => {
 }
 
 const Cheeses = () => {
-  return <h1>Cheese</h1>
+  return <a href="/nick/nack">Cheese</a>
 }
 
 export default App
