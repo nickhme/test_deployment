@@ -6,7 +6,7 @@ import './styles/style.scss'
 
 const App = () => (
   <BrowserRouter>
-    <div>Hello mah</div>
+    <div>Hello friend</div>
     <Switch>
       <Route exact path="/nick/nack" component={Home}/>
       <Route exact path="/" component={Cheeses}/>
