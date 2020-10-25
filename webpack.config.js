@@ -3,7 +3,7 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = env => {
-  const publicPath = env.NODE_ENV !== 'local' ? {
+  const publicPath = env.NODE_ENV === 'local' ? {
     publicPath: '/',
   } : {}
   return {
