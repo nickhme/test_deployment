@@ -6,7 +6,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve('.')
+    path: path.resolve('.'),
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -17,6 +18,7 @@ module.exports = {
     ]
   },
   devServer: {
+    publicPath: '/',
     contentBase: path.resolve('src'),
     hot: true,
     open: true,
