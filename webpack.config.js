@@ -3,12 +3,12 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = env => {
+  console.log(env)
   return {
     entry: './src/index.js',
     output: {
       filename: 'bundle.js',
-      path: path.resolve('.'),
-      publicPath: env.NODE_ENV === 'local' ? '/' : '/test_deployment'
+      path: path.resolve('.')
     },
     module: {
       rules: [
@@ -19,7 +19,6 @@ module.exports = env => {
       ]
     },
     devServer: {
-      publicPath: '/',
       contentBase: path.resolve('src'),
       hot: true,
       open: true,
