@@ -3,7 +3,6 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = env => {
-  console.log(env.NODE_ENV)
   return {
     entry: './src/index.js',
     output: {
