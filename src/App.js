@@ -6,7 +6,7 @@ import './styles/style.scss'
 
 const App = () => (
   <BrowserRouter>
-    <div>Finally</div>
+    <div>Finally...</div>
     <Switch>
       <Route exact path="/test_deployment/nick/nack" component={Home}/>
       <Route exact path="/test_deployment" component={Cheeses}/>
@@ -19,7 +19,7 @@ const Home = () => {
 }
 
 const Cheeses = () => {
-  return <a href="/test_deployment/nick/nack">Cheese</a>
+  return <Link to={'/test_deployment/nick/nack'}>Cheese</Link>
 }
 
 export default App
